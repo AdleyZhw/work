@@ -1,0 +1,27 @@
+
+ body{
+      background-color:royalblue;
+    } 
+
+ #a { display:flex; 
+    flex-wrap:nowrap;
+    justify-content: center; 
+    align-items:flex-start; } 
+
+#d { 
+   display:block;
+   width:680px;
+   border:0;
+   border-bottom:1 solid black;
+   background-color:whitesmoke; 
+}
+
+#z { 
+   display:block;font-display: center;background-color:rgb(30, 194, 93);color:aqua;
+} 
+#o { 
+   border:5px solid black;
+   width:700px; 
+   height:1000px; 
+   margin:0 auto; 
+}

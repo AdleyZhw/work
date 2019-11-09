@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Three</title>
+    <style>
+    #container li{
+        display: block;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 80px;
+    background-color:silver;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 25px;
+    }
+    #container li:hover {
+    font-size: 10px;
+    animation: 3.5s donghua forwards;
+}
+@keyframes donghua {
+    0% {
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+    100% {
+            background-color:red;font-size:10px;}
+}
+
+    </style>
+</head>
+<ul id="container">
+            <li>text1</li>
+            <li>text2</li>
+            <li>text3</li>
+            <li>text4</li>
+            <li>text5</li>
+         </ul>
+    <script src="three.js"></script>
+</body>
+</html>

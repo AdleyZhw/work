@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>one</title>
+</head>
+<body>
+        <ul class="nav">
+                
+                  <li class="item">爱好</li>
+                
+                  <li class="item">评论</li>
+                
+                  <li class="item">运动</li>
+                
+                </ul>
+    <script type="text/javascript">
+       var adc = document.getElementsByClassName("nav");
+       var node = document.getElementsByClassName("item");
+
+       var ap1 = document.createElement("li");
+       ap1.innerHTML = '首页';
+
+       var ap2 = document.createElement("li");
+       ap2.innerHTML = '关于';
+
+       adc[0].insertBefore(ap1,node[0]);
+
+       adc[0].appendChild(ap2);
+      /* 获取类为“nav”的ul标签，在ul中创建li标签，共创建两个，
+      一个是添加在第一位的“首页”，一个是添加在最末尾的“关于”。*/
+
+      var ap3 = document.createElement("li");
+      ap3.innerHTML = '文章';
+
+      adc[0].replaceChild(ap3,node[2]);
+      //将标签中的文本内容“运动”更改为“文章”。
+      adc[0].removeChild(node[1]); 
+      //删除文本内容为“评论”的li标签。
+    </script>
+</body>
+</html>
